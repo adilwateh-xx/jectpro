@@ -7,6 +7,7 @@ function Sidebar() {
         <h1 className="">Menu</h1>
         <h1>search</h1>
         <h1>TASKS</h1>
+        <h1>ADil</h1>
       </div>
     </div>
   )
