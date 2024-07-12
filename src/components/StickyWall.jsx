@@ -2,7 +2,10 @@
 
 function StickyWall() {
   return (
-    <div>StickyWall</div>
+    <div>
+      <div className="sticy pt-5 ">Sticky Wall</div>
+      <div ></div>
+    </div>
   )
 }
 
