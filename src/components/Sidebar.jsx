@@ -1,5 +1,8 @@
 import { FiMenu, FiSearch   } from "react-icons/fi";
 import Task from './Task'
+import Lists from "./Lists";
+import Tags from "./Tags";
+
 
 function Sidebar() {
   return (
@@ -24,8 +27,11 @@ function Sidebar() {
         </div>
 
 
-        <Task/>
+        <Task />
+        <Lists />
+        <Tags/>
         <h1>ADil</h1>
+        
       </div>
     </div>
   )
