@@ -23,7 +23,7 @@ function Lists() {
     
     return (
       <div className="flex  flex-col">
-        <h1 className="text-xs font-medium ml-5">LISTS</h1>
+        <h1 className="flex text-xs font-medium ml-5">LISTS</h1>
         <ListItem list={list}/>
     </div>
     

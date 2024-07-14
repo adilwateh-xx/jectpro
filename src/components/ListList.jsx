@@ -7,7 +7,7 @@ function ListItem({ list }) {
                 <div className="ml-8 flex">
                     
                     <div className="flex items-center  ">{l.icon}</div>
-                    <h1 className="ml-3">{l.message}</h1>
+                    <h1 className=" flex ml-3">{l.message}</h1>
                 </div> 
                 
                 {l.count}
