@@ -1,10 +1,10 @@
-import StikyList from "./StikyList"
+import StikyList from "./StickyList"
 
 function StickyWall() {
   return (
-    <div>
-      <div className="text-5xl font-bold py-4 pl-4">Sticky Wall</div>
-      <div><StikyList/></div>
+    <div className=" w-screen">
+      <div className="text-5xl font-bold py-4 pl-4 border">Sticky Wall</div>
+      <StikyList/>
          
     </div>
        

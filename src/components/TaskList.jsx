@@ -5,7 +5,7 @@ function TaskList({ list }) {
    <div>
     {
         list.map((l) => (
-            <dir className="flex cursor-pointer justify-between my-3">
+            <dir key={l.message} className="flex cursor-pointer justify-between my-3">
                 <div className="ml-8 flex">
                     
                     <div className="flex items-center ">{l.icon}</div>
