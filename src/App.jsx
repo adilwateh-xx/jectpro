@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className='container flex border-solid border-2 border-black max-w-full h-screen'>
+      <div className='container flex border-solid border-2 border-black max-w-full '>
         <Sidebar/>
         <StickyWall/>
       </div>

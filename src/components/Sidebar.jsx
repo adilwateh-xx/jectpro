@@ -2,11 +2,12 @@ import { FiMenu, FiSearch   } from "react-icons/fi";
 import Task from './Task'
 import Lists from "./Lists";
 import Tags from "./Tags";
+import SetOut from "./SetOut";
 
 
 function Sidebar() {
   return (
-    <div className="sidebar flex border w-[30%] h-full">
+    <div className="sidebar flex  w-[30%] h-screen  sticky top-0">
       <div className="sidebar-container shadow-md rounded-xl bg-[#f5f5f5] flex flex-col w-full m-4 border py-3 px-4 overflow-auto">
         <div className="flex justify-between">
           <h1 className="text-2xl font-semibold">Menu</h1>
@@ -29,8 +30,9 @@ function Sidebar() {
 
         <Task />
         <Lists />
-        <Tags/>
-        <h1>ADil</h1>
+        <Tags />
+        <SetOut/>
+         
         
       </div>
     </div>

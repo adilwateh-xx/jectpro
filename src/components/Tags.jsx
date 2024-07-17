@@ -23,7 +23,7 @@ function Tags() {
    
     return (
         <div className="w-full">
-            <div className='flex'>TAGS</div>
+            <div className='flex ml-5 text-xs font-medium'>TAGS</div>
                 <div>
                     <ListTags list={list} onClick={() => addTag('new')} />
                 </div> 
