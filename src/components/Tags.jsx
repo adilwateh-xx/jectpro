@@ -25,7 +25,7 @@ function Tags() {
         <div className="w-full">
             <div className='flex ml-5 text-xs font-medium'>TAGS</div>
                 <div>
-                    <ListTags list={list} onClick={() => addTag('new')} />
+                    <ListTags list={list} addTag={addTag} />
                 </div> 
         </div>
       
@@ -34,15 +34,26 @@ function Tags() {
 
 export default Tags
 
- function ListTags({ list, onClick }){
+ function ListTags({ list, addTag }){
+
+    function addTagItem(event) {
+        addTag(event.target.value)
+        event.target.value= ''
+    }
+
   return (
    <div className="grid sm:grid-cols-2 md:grid-cols-3  px-2">
     {
         list.map((l) => (
-            <div onClick={l ? () => {}: onClick} key={l} className="border flex cursor-pointer my-3 mx-1 rounded-xl justify-center">
-                <div className="px-5 py-2">
-                    <h1>{l ? l : '+'}</h1>
-                </div>
+            <div  key={l} className="border flex cursor-pointer my-3 mx-1 rounded-xl justify-center">
+                {
+                    l ?
+                    <div className="px-5 py-2">
+                        <h1>{l}</h1>
+                    </div>
+                    :
+                    <input onBlur={(e) => addTagItem(e)}/>
+                }
             </div>
         ))
     }
