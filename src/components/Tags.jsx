@@ -2,21 +2,13 @@ import { useState } from "react"
 
 
 function Tags() {
-    const tagList = [
-        'tag1',
-        'tag2',
-        'tag3',
-        'tag3',
-        'tag3',
-        'tag3',
-        'tag3',
-        '',
-    ]
+    const tagList = ['']
 
     const [list, setList] = useState(tagList)
 
     function addTag(tag) {
         list.pop()
+        // ['tag1, 'tag2', 'new']
         setList([...list, tag, ''])
     }
 
@@ -37,6 +29,9 @@ export default Tags
  function ListTags({ list, addTag }){
 
     function addTagItem(event) {
+        if (!event.target.value) {
+            return
+        }
         addTag(event.target.value)
         event.target.value= ''
     }
